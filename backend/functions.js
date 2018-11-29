@@ -21,7 +21,7 @@ functions = {
 
     tweetsBP: function(req, res) {
         var bearerheader = 'Bearer ' + config.bearertoken;
-        request.get('https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=BanquePopulaire&count=10&tweet_mode=extended',
+        request.get('https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=AppleEDU&count=10&tweet_mode=extended',
         {headers: {Authorization: bearerheader}}, function(error, body, response) {
              if(error)
              console.log(error);
