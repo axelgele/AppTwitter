@@ -1,0 +1,27 @@
+<mat-dialog-content class="dialog">
+        <button class="close" mat-dialog-close mat-button><i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+        
+    <h4> <i class="fab fa-twitter bird"></i> BanquePopulaire a Tweeté: </h4>  
+    <h5 class="content-tweet">{{tweet.full_text}}</h5>
+
+    <div *ngIf="arrayHashtag">
+            <tr *ngFor="let hastag of arrayHashtag">
+            <span>#{{hastag.text}}</span>
+            </tr>
+        </div>
+
+    <div class="metrics">
+            <span>
+                <i class="fas fa-retweet"> {{tweet.retweet_count}}</i>
+            </span>
+            <span>
+                <i class="fas fa-heart">{{tweet.favorite_count}}</i>
+            </span>
+        </div>
+        <div (click)="sendMail()" class="mail">
+            <a>Partager</a>
+        </div>
+
+</mat-dialog-content>
+

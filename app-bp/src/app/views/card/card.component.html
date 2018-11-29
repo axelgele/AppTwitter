@@ -1,0 +1,7 @@
+<div (click)="open()" class="container">
+  <div class="header-card">
+    <img src="{{tweet.user.profile_image_url}}">
+    <td class="date"> Tweeté le : {{dateFormater()}}</td>
+  </div>
+  <td class="text">{{tweet.full_text}}</td>
+</div>

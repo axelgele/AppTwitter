@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.15);
+    background-color: white;
+    margin: 20px;
+    position: relative;
+    margin-bottom: 50px;
+    transition: all .2s ease-in-out;
+    width: 35rem;
+    height: 8rem;
+    padding: 20px;
+    font-family: 'Crimson Text', serif;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 12px 18px 0 rgba(0,0,0,.15);
+    }
+
+    .header-card {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
+
+    img {
+        width: 3rem;
+        height: 3rem;
+    }
+    .date {
+        padding-top: 1rem;
+        color: grey;
+    }
+
+    .text {
+        text-align: left;
+        padding-top: 1rem;
+    }
+
+}
+@media only screen and (max-width: 640px ) {
+    .container {
+        width: 15rem;
+        height: fit-content;    
+    }
+    .date {
+        padding-top: 0rem !important; //a changer
+    }
+}    
