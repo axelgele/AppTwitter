@@ -17,7 +17,4 @@ Le projet se lance grave a la commande `node server.js`
 
 Disponible au cas ou le projet ne se lance pas.
 
-Projet FrontEnd disponible sur GitHub a l'adresse : 
-https://github.com/axelgele/app-bp
-
 Bonne revue de code.
